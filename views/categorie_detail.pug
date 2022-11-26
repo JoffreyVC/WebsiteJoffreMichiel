@@ -1,0 +1,21 @@
+extends layout
+
+block content
+
+
+  div(class="Container")
+    h2 #{categorie.name} 
+    h4 Gerechten:
+    
+  div(class="gerechten")
+    each gerecht in categorie_gerecht
+        a(href=gerecht.url) #{gerecht.name} € #{gerecht.prijs}
+        
+         
+         
+   
+    else
+        p This genre has no gerechten
+        
+ 
+  

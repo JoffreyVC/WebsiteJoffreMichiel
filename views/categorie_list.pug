@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  
+  div(class="Container")
+      h2=title
+  div(class="categorieDisplay")
+    each categorie in categorie_list
+        a(href=categorie.url) #{categorie.name} 
+
+
+    else
+        a There are no categories.
+      
+
+
